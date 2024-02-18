@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+}
+.container {
+  max-width: 1138.86px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.container-backgroud {
+
+  background-image: url("./image/фон\ \(1\).png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.header {
+  border: 1px solid black;
+  margin-bottom: 42.28px;
+}
+
+.header-wrap {
+  display: flex;
+  height: 102.23px;
+  align-items: center;
+}
+
+.header__logo {
+  width: 27.4px;
+  height: 44.27px;
+  margin-right: 123.13px;
+}
+
+.main-nav__item {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 64px;
+}
+
+.hero__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 204.86px;
+  margin-bottom: 88.63px;
+}
+
+.hero__logo {
+  width: 105.54px;
+  height: 85.05px;
+  margin-bottom: 40.5px;
+}
+
+.hero-title {
+  color: rgb(0, 0, 0);
+  font-family: Alumni Sans;
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 160px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.hero__text {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 57.28px;
+}
+
+.catalog-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog__list {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  width: 802.46px;
+  margin-bottom: 101.16px;
+}
+
+.list__btn {
+  display: flex;
+  justify-content: center;
+  color: rgba(17, 14, 25, 0.7);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  border-radius: 44.89px;
+  background: rgb(216, 228, 232);
+  border: none;
+  padding: 7.48px 22.45px;
+}
+
+.list__btn:hover {
+  cursor: pointer;
+}
+
+.active {
+  background-color: rgb(224, 225, 75);
+}
+
+.catalog-wrap-pr {
+  display: flex;
+  align-items: center;
+}
+
+.slayder-btn {
+  background: transparent;
+  border: none;
+}
+
+.slayder-btn:hover {
+  cursor: pointer;
+}
+
+.catalog__product {
+  display: flex;
+  border: 1px solid black;
+  width: 936.26px;
+  overflow: scroll;
+  margin: 0 43.44px 75.18px;
+}
+
+.catalog__shop {
+  display: flex;
+  justify-content: space-between;
+  width: 697.48px;
+  border: 1px solid black;
+  margin-bottom: 67.81px;
+}
+
+.shop-btn {
+  padding: 12.54px 37.62px;
+  text-decoration: none;
+  border-radius: 75.24px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.shop-btn:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+.ozon {
+  background-color: rgb(0, 91, 255);
+}
+
+.wb {
+  background-color: rgb(188, 61, 150);
+}
+
+.rating-img {
+  display: block;
+  width: 491px;
+  height: 284px;
+}
+
+.fon-proof {
+  height: 860px;
+  width: 100%;
+  background-image: url('./image/fon-prooff.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.proof-wrap {
+margin-top: 69.41px;
+ border: 1px solid black;
+}
+
+.proof-wrap-content {
+
+  display: flex;
+  align-items: start;
+}
+
+.proof-title {
+  color: rgb(0, 0, 0);
+  font-family: Alumni Sans;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 52px;
+  text-align: center;
+margin-bottom:  72,09px;
+}
+
+.proof__img-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.one-pic {
+  position: relative;
+}
+
+.one-vec {
+  bottom: -40px;
+  left: 50px;
+}
+
+.one-img {
+
+}
+.proof__vector {
+  position: absolute;
+  width: 42.96px;
+  height: 131.73px;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.proof__img {
+  z-index: 1;
+  width: 265px;
+  height: 285.86px;
+}
+
