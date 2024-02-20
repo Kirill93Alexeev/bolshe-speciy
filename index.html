@@ -8,27 +8,27 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container-backgroud">
-      <header class="header">
-        <div class="container">
-          <div class="header-wrap">
-            <img src="./image/logo-header.png" alt="" class="header__logo" />
-            <nav class="main-nav">
-              <a href="#order" class="main-nav__item" id="order">Заказать</a>
-              <a href="#proof" class="main-nav__item" id="proof"
-                >Преимущества</a
-              >
-              <a href="#about" class="main-nav__item" id="about">О Нас</a>
-              <a href="#more" class="main-nav__item" id="more">Больше Здесь</a>
-              <a href="#contacts" class="main-nav__item" id="contacts"
-                >Контакты</a
-              >
-            </nav>
+    <section class="hero">
+      <div class="container">
+        <div class="background-hero">
+          <div class="header">
+            <div class="header-wrap">
+              <img src="./image/logo-header.png" alt="" class="header__logo" />
+              <nav class="main-nav">
+                <a href="#order" class="main-nav__item">Заказать</a>
+                <a href="#proof" class="main-nav__item"
+                  >Преимущества</a
+                >
+                <a href="#about" class="main-nav__item">О Нас</a>
+                <a href="#more" class="main-nav__item" id="more"
+                  >Больше Здесь</a
+                >
+                <a href="#contacts" class="main-nav__item"
+                  >Контакты</a
+                >
+              </nav>
+            </div>
           </div>
-        </div>
-      </header>
-      <div class="hero">
-        <div class="container">
           <div class="hero__wrap">
             <img src="./image/logo-hero.png" alt="" class="hero__logo" />
             <h1 class="hero-title">Больше Специй</h1>
@@ -36,10 +36,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <main>
-      <section class="catalog">
+      <section class="catalog" id="order">
         <div class="container">
           <div class="catalog-wrap">
             <div class="catalog__list list">
@@ -117,68 +117,78 @@
           </div>
         </div>
       </section>
-      <section class="proof">
+      <section class="proof" id="proof">
         <h2 class="proof-title">Наши преимущества</h2>
         <div class="fon-proof">
-           <div class="container">
-          <div class="proof-wrap">
-            
-            <div class="proof-wrap-content">
-              <div class="proof__img-wrap one-pic">
-                <img src="./image/proof-img1.png" alt="" class="proof__img one-img" />
-                <img
-                  src="./image/vector-proof.png"
-                  alt=""
-                  class="proof__vector one-vec"
-                />
-                <p class="proof__text">
-                  Готовим специи небольшими партиями, чтобы сохранить свежий
-                  вкус и аромат пряностей.
-                </p>
+          <div class="container">
+            <div class="proof-wrap">
+              <div class="proof-wrap-content">
+                <div class="proof__img-wrap one-proof">
+                  <img
+                    src="./image/proof-img1.jpg"
+                    alt=""
+                    class="proof__img one-img"
+                  />
+                  <div class="proof__wrap-text">
+                    <img
+                      src="./image/vector-proof.png"
+                      alt=""
+                      class="proof__vector"
+                    />
+                    <p class="proof__text">
+                      Готовим специи небольшими партиями, чтобы сохранить свежий
+                      вкус и аромат пряностей.
+                    </p>
+                  </div>
+                </div>
+                <div class="proof__img-wrap two-proof">
+                  <img src="./image/proof-img2.jpg" alt="" class="proof__img" />
+                  <div class="proof__wrap-text">
+                    <img
+                      src="./image/vector-proof.png"
+                      alt=""
+                      class="proof__vector"
+                    />
+                    <p class="proof__text">
+                      Работаем со специями, которые прошли сертификацию и делаем
+                      контроль качества каждой поставки.
+                    </p>
+                  </div>
+                </div>
+                <div class="proof__img-wrap three-proof">
+                  <img src="./image/proof-img3.jpg" alt="" class="proof__img" />
+                  <div class="proof__wrap-text">
+                    <img
+                      src="./image/vector-proof.png"
+                      alt=""
+                      class="proof__vector"
+                    />
+                    <p class="proof__text">
+                      Можем отличить регион произрастания кардамона по цвету и
+                      знаем аромат и вкус свежего кунжута летней сборки.
+                    </p>
+                  </div>
+                </div>
+                <div class="proof__img-wrap four-proof">
+                  <img src="./image/proof-img4.jpg" alt="" class="proof__img" />
+                  <div class="proof__wrap-text">
+                    <img
+                      src="./image/vector-proof.png"
+                      alt=""
+                      class="proof__vector"
+                    />
+                    <p class="proof__text">
+                      Создали продукт “Золотое молоко”, который заказали более
+                      21800 раз.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="proof__img-wrap">
-                <img src="./image/proof-img2.png" alt="" class="proof__img" />
-                <img
-                  src="./image/vector-proof.png"
-                  alt=""
-                  class="proof__vector"
-                />
-                <p class="proof__text">
-                  Работаем со специями, которые прошли сертификацию и делаем
-                  контроль качества каждой поставки.
-                </p>
-              </div>
-              <div class="proof__img-wrap">
-                <img src="./image/proof-img3.png" alt="" class="proof__img" />
-                <img
-                  src="./image/vector-proof.png"
-                  alt=""
-                  class="proof__vector"
-                />
-                <p class="proof__text">
-                  Можем отличить регион произрастания кардамона по цвету и знаем
-                  аромат и вкус свежего кунжута летней сборки.
-                </p>
-              </div>
-              <div class="proof__img-wrap">
-                <img src="./image/proof-img4.png" alt="" class="proof__img" />
-                <img
-                  src="./image/vector-proof.png"
-                  alt=""
-                  class="proof__vector"
-                />
-                <p class="proof__text">
-                  Создали продукт “Золотое молоко”, который заказали более 21800
-                  раз.
-                </p>
-              </div>
-        </div>
-       
             </div>
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="about__wrap">
             <p class="about__title">О Нас</p>
@@ -216,27 +226,41 @@
       <section class="promo">
         <div class="container">
           <div class="promo__wrap">
-            <div class="promo-img-wrap">
-              <img src="" alt="" class="promo__img" />
-              <img src="" alt="" class="promo__img" />
+            <div class="img-wrap">
+              <img src="./image/promo1.jpg" alt="" class="promo__img" />
+              <img src="./image/promo2.jpg" alt="" class="promo__img" />
             </div>
-            <div class="promo-img-wrap">
-              <img src="" alt="" class="promo__img" />
-              <img src="" alt="" class="promo__img" />
+
+            <div class="img-wrap img-sdvg">
+              <img
+                src="./image/promo3.jpg"
+                alt=""
+                class="promo__img img-sdvig"
+              />
+              <img src="./image/promo4.jpg" alt="" class="promo__img" />
             </div>
-            <div class="promo-img-wrap">
-              <img src="" alt="" class="promo__img" />
-              <img src="" alt="" class="promo__img" />
+
+            <div class="img-wrap">
+              <img src="./image/promo5.jpg" alt="" class="promo__img" />
+              <img
+                src="./image/promo6.jpg"
+                alt=""
+                class="promo__img "
+              />
             </div>
-            <div class="promo-img-wrap">
-              <img src="" alt="" class="promo__img" />
-              <img src="" alt="" class="promo__img" />
+            <div class="img-wrap img-sdvig">
+              <img
+                src="./image/promo7.jpg"
+                alt=""
+                class="promo__img "
+              />
+              <img src="./image/promo8.jpg" alt="" class="promo__img" />
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container">
         <div class="footer__wrap">
           <img src="./image/logo-footer.png" alt="" class="footer__logo" />
@@ -253,8 +277,8 @@
             <a href="" class="social-link"
               ><img src="./image/vk.png" alt="" class="social-item"
             /></a>
-            <p class="since">since 2018</p>
           </div>
+           <p class="since">since 2018</p>
         </div>
       </div>
     </footer>
