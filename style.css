@@ -231,9 +231,8 @@ transform: scale(110%);
   width: 265px;
   height: 285.86px;
   border-radius: 20px;
-  border: 1px solid #000;
-  background: #d9d9d9;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #D9D9D9;
+  box-shadow: 0px 0px 40px #FEFFFF;
 }
 
 .proof__text {
@@ -274,7 +273,7 @@ transform: scale(110%);
 .promo__img {
   width: 255px;
   height: 275px;
-  border-radius: 14px;
+  border-radius: 13px;
   margin: 10px;
   border: 1px solid #d9d9d9;
 }
