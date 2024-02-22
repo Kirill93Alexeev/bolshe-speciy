@@ -5,10 +5,15 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background: #F5F5F5;
+}
 .container {
   max-width: 1280px;
   padding: 0 80px;
   margin: 0 auto;
+  /* border: 1px solid black; */
+  overflow: hidden;
 }
 
 .header {
@@ -27,7 +32,11 @@
   margin-right: 123.13px;
 }
 
+.main-nav {
+  display: flex;
+}
 .main-nav__item {
+  display: block;
   color: rgb(0, 0, 0);
   font-family: Montserrat;
   font-size: 16px;
@@ -36,6 +45,11 @@
   text-decoration: none;
   text-transform: uppercase;
   margin-left: 64px;
+   transition: 0.3s;
+}
+
+.main-nav__item:hover {
+transform: scale(110%);
 }
 
 .hero {
@@ -43,13 +57,13 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 28px;
 }
 .hero__wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 204.86px;
-  margin-bottom: 88.63px;
 }
 
 .hero__logo {
@@ -61,7 +75,7 @@
 .hero-title {
   color: rgb(0, 0, 0);
   font-family: Alumni Sans;
-  font-size: 119px;
+  font-size: 160px;
   font-weight: 600;
   line-height: 100px;
   text-transform: uppercase;
@@ -85,6 +99,7 @@
   display: flex;
   justify-content: space-between;
   width: 802.46px;
+   margin-top: 60px;
   margin-bottom: 101.16px;
 }
 
@@ -104,6 +119,7 @@
 
 .list__btn:hover {
   cursor: pointer;
+  background-color: rgb(224, 225, 75);;
 }
 
 .active {
@@ -183,6 +199,7 @@
 }
 
 .proof-title {
+  display: block;
   color: rgb(0, 0, 0);
   font-family: Alumni Sans;
   font-size: 48px;
@@ -223,7 +240,6 @@
 }
 
 .one-proof {
-
 }
 
 .two-proof {
@@ -234,18 +250,14 @@
   margin-top: 103px;
 }
 
-.about {
-  margin-bottom: 158px;
-}
-
 .about__title {
-color: #000;
-font-family: "Alumni Sans";
-font-size: 48px;
-font-weight: 600;
-line-height: 94px;
-text-align: center;
-margin-bottom: 52px;
+  color: #000;
+  font-family: "Alumni Sans";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 94px;
+  text-align: center;
+  margin-bottom: 52px;
 }
 
 .promo__wrap {
@@ -263,7 +275,7 @@ margin-bottom: 52px;
   height: 275px;
   border-radius: 14px;
   margin: 10px;
-border: 1px solid #D9D9D9;
+  border: 1px solid #d9d9d9;
 }
 
 .img-sdvig {
@@ -280,44 +292,142 @@ border: 1px solid #D9D9D9;
 .footer__wrap {
   display: flex;
   flex-direction: column;
-align-items: center;
+  align-items: center;
 }
 
 .footer__logo {
-width: 106px;
-height: 85px;
-margin-top: 50px;
-margin-bottom: 72px;
+  width: 106px;
+  height: 85px;
+  margin-top: 50px;
+  margin-bottom: 72px;
 }
 
 .footer__title {
   width: 409px;
-color: #000;
-text-align: center;
-font-family: Montserrat;
-font-size: 22px;
-font-weight: 700;
-line-height: 28px;
-margin-bottom: 44px;
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 44px;
 }
 
 .social-item {
-width: 46px;
-height: 46px;
+  width: 46px;
+  height: 46px;
+  transition: 0.3s;
+}
+
+.social-item:hover {
+transform: scale(110%);
 }
 
 .footer__social {
-width: 200px;
-display: flex;
-justify-content: space-between;
-margin-bottom: 48px;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 48px;
 }
 
 .since {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 50px;
+}
+
+.about__title {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+.about__wrap {
+  display: flex;
+  margin-bottom: 160px;
+}
+
+.img__wrap {
+  position: relative;
+  display: flex;
+}
+
+.img__fon {
+  position: absolute;
+  width: 277px;
+  height: 345px;
+  left: -160px;
+  z-index: 1;
+}
+
+.img__lena {
+  position: absolute;
+  width: 216px;
+  height: 376px;
+  top: -73px;
+  left: -10px;
+  z-index: 2;
+}
+
+.img__tanya {
+  position: absolute;
+  width: 202px;
+  height: 402px;
+  top: -80px;
+  left: 130px;
+  z-index: 3;
+}
+
+.img__text-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.img__text-wrap-main {
+  position: relative;
+}
+.text-fon {
+  position: absolute;
+  width: 738px;
+  height: 285px;
+  top: -50px;
+  right: 0px;
+}
+
+.text-fon2 {
+  position: absolute;
+  top: 145px;
+  right: 73px;
+}
+
+.img__text-main {
+  position: absolute;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  width: 591px;
+  right: 70px;
+  top: 30px;
+}
+
+.img__text-wrap-other {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-top: 280px;
+  margin-right: 105px;
+  width: 631px;
+}
+
+.img__text-other {
+  width: 265px;
 color: #000;
 font-family: Montserrat;
 font-size: 16px;
 font-weight: 500;
 line-height: 20px;
-margin-bottom: 50px;
 }
