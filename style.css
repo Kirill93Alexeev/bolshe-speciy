@@ -138,6 +138,9 @@ body {
 }
 
 @media (max-width: 560px) {
+  .hero {
+      height: 100vh;
+  }
   .hero-title {
     font-size: 80px;
     text-align: center;
@@ -154,7 +157,6 @@ body {
 
 @media (max-width: 455px) {
   .hero {
-      height: 625px;
     margin-bottom: 18px;
     background-image: url("./image/Slice 1 (1).png");
   }
