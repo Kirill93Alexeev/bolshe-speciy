@@ -86,7 +86,7 @@ body {
 }
 
 .hero {
-  height: 720px;
+ height: 100vh;
   background-image: url("./image/фон\ \(1\).png");
   background-position: center;
   background-size: cover;
