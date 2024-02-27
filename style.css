@@ -86,7 +86,7 @@ body {
 }
 
 .hero {
- height: 100vh;
+  height: 730px;
   background-image: url("./image/фон\ \(1\).png");
   background-position: center;
   background-size: cover;
@@ -138,9 +138,6 @@ body {
 }
 
 @media (max-width: 560px) {
-  .hero {
-      height: 100vh;
-  }
   .hero-title {
     font-size: 80px;
     text-align: center;
@@ -161,7 +158,6 @@ body {
     background-image: url("./image/Slice 1 (1).png");
   }
 
-
   .hero__text {
     width: 218px;
     font-size: 16px;
@@ -179,9 +175,11 @@ body {
 .catalog__list {
   display: flex;
   justify-content: space-between;
-  width: 802.46px;
+  flex-wrap: wrap;
+  max-width: 802.46px;
+  width: 100%;
   margin-top: 60px;
-  margin-bottom: 101.16px;
+  margin-bottom: 101px;
 }
 
 .list__btn {
@@ -192,10 +190,12 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
-  border-radius: 44.89px;
+  border-radius: 45px;
   background: rgb(216, 228, 232);
   border: none;
-  padding: 7.48px 22.45px;
+  padding: 7.5px 22.5px;
+  margin-bottom: 16px;
+  margin-right: 14px;
 }
 
 .list__btn:hover {
@@ -223,22 +223,52 @@ body {
 
 .catalog__product {
   display: flex;
-  width: 900px;
+  max-width: 900px;
+  width: 100%;
   overflow: scroll;
-  margin: 0 43.44px 75.18px;
+  margin: 0 43.5px 75px;
+}
+
+.product__item {
+  width: 223px;
+  height: 275px;
+}
+
+@media (max-width: 455px) {
+  .catalog__list {
+    justify-content: start;
+    margin-bottom: 77px;
+  }
+
+  .list__btn {
+    font-size: 10px;
+    line-height: 12.5px;
+    border-radius: 28px;
+    padding: 5px 14px;
+  }
+
+  .slayder-btn {
+    display: none;
+  }
+
+  .product__item {
+    width: 153px;
+    height: 189px;
+  }
 }
 
 .catalog__shop {
   display: flex;
   justify-content: space-between;
-  width: 697.48px;
-  margin-bottom: 67.81px;
+  max-width: 697.5px;
+  width: 100%;
+  margin-bottom: 68px;
 }
 
 .shop-btn {
-  padding: 12.54px 37.62px;
+  padding: 12.5px 37.5px;
   text-decoration: none;
-  border-radius: 75.24px;
+  border-radius: 75px;
   color: rgb(255, 255, 255);
   font-family: Montserrat;
   font-size: 22px;
@@ -259,13 +289,34 @@ body {
   background-color: rgb(188, 61, 150);
 }
 
-.rating-img {
+.rating__img {
   display: block;
   width: 491px;
   height: 284px;
 }
 
+@media (max-width: 455px) {
+  .catalog__shop {
+    flex-direction: column;
+    align-items: center;
+  }
+  .shop-btn {
+    line-height: 22px;
+  }
+  .ozon {
+    margin-bottom: 29px;
+  }
+  .rating__img {
+    width: 319px;
+    height: 185px;
+  }
+}
+
+.proof {
+  margin-bottom: 70px;
+}
 .fon-proof {
+  width: 100%;
   height: 860px;
   background-image: url("./image/fon-prooff.png");
   background-position: center;
@@ -274,9 +325,11 @@ body {
 }
 
 .proof-wrap-content {
+  height: 100%;
   display: flex;
   align-items: start;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .proof-title {
@@ -301,8 +354,8 @@ body {
   width: 229px;
 }
 .proof__vector {
-  width: 42.96px;
-  height: 131.73px;
+  width: 43px;
+  height: 132px;
   object-fit: cover;
   object-position: center;
 }
@@ -316,7 +369,7 @@ body {
 }
 
 .proof__text {
-  width: 229px;
+  width: 100%;
 }
 
 .one-proof {
@@ -330,6 +383,48 @@ body {
   margin-top: 103px;
 }
 
+@media (max-width: 455px) {
+  .proof-wrap-content {
+    justify-content: space-around;
+  }
+  .proof-title {
+    font-size: 44px;
+    margin-bottom: 160px;
+  }
+
+  .proof__img-wrap {
+    width: 149px;
+  }
+  .proof__img {
+    width: 149px;
+    height: 162px;
+  }
+  .proof__vector {
+    width: 34px;
+    height: 105px;
+  }
+  .proof__wrap-text {
+    width: 149px;
+  }
+  .two-proof {
+    margin-top: 88px;
+  }
+
+  .four-proof {
+    margin-top: 60px;
+  }
+  .three-proof {
+margin-top: -40px;
+  }
+  .fon-proof {
+    height: 920px;
+  }
+
+  .proof-wrap {
+    margin-top: -155px;
+  }
+}
+
 .about__title {
   color: #000;
   font-family: "Alumni Sans";
@@ -338,85 +433,6 @@ body {
   line-height: 94px;
   text-align: center;
   margin-bottom: 52px;
-}
-
-.promo__wrap {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 104px;
-}
-.img-wrap {
-  display: flex;
-  flex-direction: column;
-}
-
-.promo__img {
-  width: 255px;
-  height: 275px;
-  border-radius: 13px;
-  margin: 10px;
-  border: 1px solid #d9d9d9;
-}
-
-.img-sdvig {
-  margin-top: 67px;
-}
-
-.footer {
-  background-image: url(./image/fon-footer.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.footer__wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer__logo {
-  width: 106px;
-  height: 85px;
-  margin-top: 50px;
-  margin-bottom: 72px;
-}
-
-.footer__title {
-  width: 409px;
-  color: #000;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 28px;
-  margin-bottom: 44px;
-}
-
-.social-item {
-  width: 46px;
-  height: 46px;
-  transition: 0.3s;
-}
-
-.social-item:hover {
-  transform: scale(110%);
-}
-
-.footer__social {
-  width: 200px;
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 48px;
-}
-
-.since {
-  color: #000;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20px;
-  margin-bottom: 50px;
 }
 
 .about__title {
@@ -510,4 +526,87 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
+}
+
+@media (max-width: 455px) {
+  
+}
+
+.promo__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 104px;
+}
+.img-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__img {
+  width: 255px;
+  height: 275px;
+  border-radius: 13px;
+  margin: 10px;
+  border: 1px solid #d9d9d9;
+}
+
+.img-sdvig {
+  margin-top: 67px;
+}
+
+.footer {
+  background-image: url(./image/fon-footer.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo {
+  width: 106px;
+  height: 85px;
+  margin-top: 50px;
+  margin-bottom: 72px;
+}
+
+.footer__title {
+  width: 409px;
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 44px;
+}
+
+.social-item {
+  width: 46px;
+  height: 46px;
+  transition: 0.3s;
+}
+
+.social-item:hover {
+  transform: scale(110%);
+}
+
+.footer__social {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 48px;
+}
+
+.since {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 50px;
 }
