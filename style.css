@@ -10,10 +10,11 @@ body {
 }
 .container {
   max-width: 1280px;
+  width: 100%;
   padding: 0 80px;
   margin: 0 auto;
   /* border: 1px solid black; */
-  /* overflow: hidden; */
+  /* overflow: scroll; */
 }
 
 .header {
@@ -226,7 +227,8 @@ body {
   max-width: 900px;
   width: 100%;
   overflow: scroll;
-  margin: 0 43.5px 75px;
+  margin: 0 43.5px;
+  margin-bottom: 75px;
 }
 
 .product__item {
@@ -235,6 +237,7 @@ body {
 }
 
 @media (max-width: 455px) {
+
   .catalog__list {
     justify-content: start;
     margin-bottom: 77px;
@@ -296,6 +299,9 @@ body {
 }
 
 @media (max-width: 455px) {
+  .catalog__product {
+    width: 100vw;
+  }
   .catalog__shop {
     flex-direction: column;
     align-items: center;
